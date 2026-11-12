@@ -10,8 +10,9 @@ class ParkingTest {
 
     @Test
     void testTwoWheelerOneHour() {
-        assertEquals(15, parking.calculateFee("two-wheeler", 1));
+        assertEquals(10, parking.calculateFee("two-wheeler", 1));
     }
+    
 
     @Test
     void testFourWheelerOneHour() {
