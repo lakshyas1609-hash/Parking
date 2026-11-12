@@ -28,6 +28,12 @@ class ParkingTest {
     void testFourWheelerMultipleHours() {
         assertEquals(60, parking.calculateFee("four-wheeler", 3));
     }
+    @Test
+    void testFourWheelerFiveHours() {
+    	assertEquals(100, parking.calculateFee("four-wheeler", 5));
+    }
+
+    
 
     @Test
     void testPartialHourRounding() {
